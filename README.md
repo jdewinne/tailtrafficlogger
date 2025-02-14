@@ -1,3 +1,13 @@
+
+# Log Tailscale network flow logs local
+
+This is a logger that listens for incoming network flow log messages, and sends them decompressed to stdout.
+Relates to [Headscale issue #1687](https://github.com/juanfont/headscale/issues/1687)
+
+Headscale and Tailscale:
+* Headscale: Currently headscale does not support Network flow logging. In order to enable this in headscale, an example branch is available: [headscale-network-flow-logs](https://github.com/jdewinne/headscale/tree/headscale-network-flow-logs)
+* Tailscale: The tailscale daemon does not support a custom endpoint for Network flow logging. In order to enable this in tailscaled, an example branch is available; [headscale-network-flow-logs](https://github.com/jdewinne/tailscale/tree/headscale-network-flow-logs)
+
 Example output:
 
 ```
